@@ -1,6 +1,6 @@
 # Nemat Ullah — portfolio redesign
 
-A responsive, no-build portfolio site made with plain HTML, CSS, and JavaScript. Project and app screenshots—including the current Town Fitness Point photography—are stored locally in `assets/`. Fonts are local WOFF2 files, so the preview does not depend on third-party image or font CDNs.
+A responsive, no-build portfolio site made with plain HTML, CSS, and JavaScript. Project and app screenshots and the WOFF2 font files are bundled locally under `assets/`, so the page does not depend on third-party image or font CDNs.
 
 ## Run locally
 
@@ -14,13 +14,16 @@ Then open `http://localhost:4173`.
 
 ## What is included
 
-- Editorial, high-contrast visual system with custom local typefaces
+- Editorial, high-contrast visual system with local Space Grotesk, DM Mono, and DM Serif Display fonts
 - Responsive navigation, section progress, and scroll reveals
-- Project showcase with live links and local screenshots, including current photography from the live Town Fitness Point site
-- Mobile review pass at 390 × 844: no horizontal overflow; screenshot crops corrected; body-copy sizes increased
+- Project showcase with live links and local screenshots
 - Interactive calculator mode/screenshot selector
 - Android app details and download/source links
 - Playable canvas mini-game (keyboard, pointer, and touch)
 - Contact form that opens a pre-filled email draft; no backend required
 
-The font license files are in `assets/fonts/`. External project, repository, APK, email, and WhatsApp links intentionally point to Nemat's supplied portfolio destinations.
+Font license notices are included in `assets/fonts/`. External project, repository, APK, email, and WhatsApp links intentionally point to Nemat's supplied portfolio destinations.
+
+## Deploy to Vercel
+
+This is a static site—there is no build step, package installation, or backend. Import the repository into Vercel, select **Other** as the framework preset, keep the build and install commands empty, and deploy from the repository root. The homepage is `index.html`; the included `vercel.json` enables clean `.html` URLs.
